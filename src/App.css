@@ -1,0 +1,640 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* /////////////////Taskpane styles for date sections */
+.taskpane-date-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 4px;
+  border-top: 2px solid #337ab7;
+}
+.taskpane-btn-submit,
+.taskpane-btn-reset {
+  color: #437182;
+  background-color: #cce7ff;
+  border-color: #6aa0c3;
+  padding: 4px 12px;
+  border: 1px solid #6aa0c3;
+  border-radius: 4px;
+  font-weight: 600;
+  outline: 0;
+}
+.taskpane-btn-submit {
+  margin-right: 6px;
+}
+
+.taskpane-dropdwn-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 4px;
+}
+
+/* ///////////////////////////////////////////////////**********************taskpane styles end**************8\\\\\\\\\\\\\\\\ */
+.main-container {
+  display: flex;
+}
+main {
+  background-color: #fff;
+  width: 100%;
+  overflow-x: auto;
+}
+.pannel {
+  padding: 10px !important;
+}
+.nav {
+  background-color: #fff;
+}
+.title {
+  font-size: 3rem;
+  display: grid;
+  place-items: center;
+}
+
+/* Sidebar */
+.sidebar {
+  background: rgb(0, 7, 61);
+  color: white;
+  height: auto;
+  overflow-y: auto;
+}
+
+.top_section {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  padding: 6px 35px;
+}
+
+/* .top_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+} */
+.logo {
+  font-size: 25px;
+  line-height: 0;
+  margin: 15px;
+  font-weight: bold;
+}
+.bars {
+  width: 30px;
+}
+.hide {
+  display: none;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  height: 30px;
+  padding: 10px;
+}
+.search input {
+  border: none;
+  margin-left: 10px;
+  border-radius: 5px;
+  background: rgb(238, 238, 238);
+
+  color: white;
+}
+
+.routes {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.link {
+  display: flex;
+  color: white;
+  gap: 10px;
+  padding: 20px 10px;
+  border-right: 4px solid transparent;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.link:hover {
+  border-right: 4px solid white;
+  background: rgb(45, 51, 89);
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.active {
+  border-right: 4px solid white;
+  background: rgb(45, 51, 89);
+}
+.link_text {
+  white-space: nowrap;
+  font-size: 16px;
+}
+
+.menu {
+  display: flex;
+  color: white;
+
+  padding: 5px 10px;
+  border-right: 4px solid transparent;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  justify-content: space-between;
+}
+.menu_item {
+  display: flex;
+  gap: 10px;
+}
+.menu_container {
+  display: flex;
+  flex-direction: column;
+}
+.menu_container .link {
+  padding-left: 20px;
+  border-bottom: #fff 0.5px solid;
+}
+
+.container {
+  display: flex;
+}
+
+.div1,
+.div2 {
+  flex: 1;
+  /* Adjust flex property to control the width of each div */
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+main {
+}
+.chart {
+  background-color: #e4e8ef;
+}
+
+/* Below code is for Popups------------------------start */
+.model-popup {
+  padding: 0px !important;
+}
+.ReactModal__Content ReactModal__Content {
+  padding: 0px !important;
+}
+.popup-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
+.popup-form.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.popup-form.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+/*Popup code end--***********************----------------*/
+
+/* subcategory style ---************************* */
+
+.button-styles {
+  background-color: #008080;
+  color: #fff;
+  font-size: 12px;
+  padding: 3px;
+  font-weight: 700;
+  border: none;
+  margin: 6px 10px;
+  cursor: pointer;
+}
+.sub-category-btn {
+  padding: 7px 7px;
+}
+.card {
+  height: 100vh !important;
+}
+.sub-icons {
+  color: white;
+  font-family: helvetica, arial, verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+.sub-category-heading {
+  background-color: #dadada;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.editbtn {
+  background: none;
+  border: none;
+  color: blue;
+  text-align: center !important;
+}
+.viewbtn {
+  background-color: #008080;
+  font-weight: 600;
+  color: white;
+  padding: 2px 9px;
+  border-radius: 4px;
+  border: none;
+}
+.mine .react-datepicker__input-container .react-datepicker__calendar-icon {
+  position: absolute;
+  padding: 0.5rem;
+  box-sizing: inherit !important;
+}
+.dashbg {
+  background: url("../src/images/ims-background.jpg");
+  background-size: cover;
+  color: #fff;
+}
+.tblhead {
+  background-color: #d9208f !important;
+}
+/* workflow styles***************************8 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pannel {
+  padding: 10px !important;
+}
+.nav {
+  background-color: #fff;
+}
+.title {
+  font-size: 3rem;
+  display: grid;
+  place-items: center;
+}
+
+/* Sidebar */
+.sidebar {
+  background: rgb(0, 7, 61);
+  color: white;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.logo {
+  font-size: 25px;
+  line-height: 0;
+  margin: 15px;
+  font-weight: bold;
+}
+.bars {
+  width: 30px;
+}
+.hide {
+  display: none;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  height: 30px;
+  padding: 10px;
+}
+.search input {
+  border: none;
+  margin-left: 10px;
+  border-radius: 5px;
+  background: rgb(238, 238, 238);
+
+  color: white;
+}
+
+.routes {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.link {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  gap: 10px;
+  padding: 20px 10px;
+  border-right: 4px solid transparent;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.link:hover {
+  border-right: 4px solid white;
+  background: rgb(45, 51, 89);
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.active {
+  border-right: 4px solid white;
+  background: rgb(45, 51, 89);
+}
+.link_text {
+  white-space: nowrap;
+  font-size: 16px;
+}
+.react-datepicker__input-container .react-datepicker__calendar-icon {
+  box-sizing: border-box !important;
+}
+.menu {
+  display: flex;
+  color: white;
+
+  padding: 5px 10px;
+  border-right: 4px solid transparent;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  justify-content: space-between;
+}
+.menu_item {
+  display: flex;
+  gap: 10px;
+}
+.menu_container {
+  display: flex;
+  flex-direction: column;
+}
+.menu_container .link {
+  padding-left: 20px;
+  border-bottom: #fff 0.5px solid;
+}
+
+.container {
+  display: flex;
+}
+
+.div1,
+.div2 {
+  flex: 1;
+  /* Adjust flex property to control the width of each div */
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* main {
+  background-color: #e4e8ef;
+} */
+.chart {
+  background-color: #e4e8ef;
+}
+
+/* Below code is for Popups------------------------start */
+.model-popup {
+  padding: 0px !important;
+}
+.ReactModal__Content ReactModal__Content {
+  padding: 0px !important;
+}
+.popup-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
+.popup-form.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.popup-form.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+/*Popup code end--***********************----------------*/
+
+#workflow-sec fieldset {
+  border: 1px solid #a5a9a9 !important;
+  padding: 0 1.4em 1.4em 1.4em !important;
+  margin: 0 0 1.5em 0 !important;
+}
+
+.workflow-fieldset legend {
+  font-weight: 700;
+  padding: 0 0.5rem !important;
+  float: revert !important;
+  font-size: 1.1rem !important;
+  text-align: left !important;
+  width: auto !important;
+  margin-bottom: 1.5rem !important;
+  color: #08615f;
+}
+.required {
+  color: red !important;
+  font-size: 20px;
+  margin-left: 0.2rem;
+}
+.red-close-button {
+  color: red !important;
+}
+.float-right {
+  float: right;
+}
+.form-select {
+  border-radius: 1px;
+  /* width: 239px !important; */
+}
+#workflow-form .col-form-label {
+  font-weight: 700;
+}
+.close_btn {
+  text-decoration: none !important;
+  border-radius: 50% !important;
+  font-size: 1rem !important;
+  opacity: 1 !important;
+  color: #ffff !important;
+  font-weight: 600 !important;
+  padding: 3.5px 10.5px !important;
+  background-color: red !important;
+  margin-top: -20px !important;
+  /* margin-left: 40px !important; */
+  float: inline-end;
+}
+
+/* TicketDetailsPopUp-----create issue popup */
+.required {
+  color: red !important;
+  font-size: 20px;
+  margin-left: 0.2rem;
+}
+
+.disabled-text {
+  color: #999;
+}
+
+fieldset {
+  border: 1px solid #a5a9a9 !important;
+  padding: 0 1.4em 1.4em 1.4em !important;
+  margin: 0 0 1.5em 0 !important;
+}
+
+legend {
+  font-weight: 500;
+  padding: 0 0.5rem !important;
+  float: revert !important;
+  font-size: 1.1rem !important;
+  text-align: left !important;
+  width: auto !important;
+  margin-bottom: 1.5rem !important;
+  color: #08615f;
+}
+/* //////pafination styels *******************8 */
+
+.p-inputtext {
+  font-family: var(--font-family);
+  font-feature-settings: var(--font-feature-settings, normal);
+  font-size: 1rem;
+  color: #495057;
+  background: #ffffff !important;
+  padding: 0.5rem 0.5rem !important;
+  border: 1px solid #ced4da !important;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s,
+    box-shadow 0.2s;
+  appearance: none;
+  border-radius: 3px;
+}
+
+/* ////table rows padding styels**************************8///// */
+
+.table > :not(caption) > * > * {
+  padding: 0.2rem 0.3rem !important;
+}
+
+/* .table-bordered tbody tr {
+  > * {
+    background-color: red;
+  }
+} */
+/* .table-bordered-hover * {
+  background-color: red !important;
+} */
+
+.bold-label {
+  font-weight: bold;
+}
+.inputStyle {
+  font-weight: bold;
+}
+
+.abc {
+  margin-right: 0.5rem;
+}
+
+.customModalHeader {
+  border-color: #008080;
+  background-color: #008080;
+}
+.modal-container {
+  border-color: #008080 !important;
+}
+.pagination-wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+.modal-title {
+  float: left;
+  width: 100%;
+}
+.button-container {
+  float: left;
+  width: 100%;
+}
+.table-active {
+  font-weight: 600 !important;
+  font-size: 16px;
+  background-color: #a1968a !important;
+}
+@media (min-width: 1200px) {
+  .modal-xl {
+    --bs-modal-width: 1200px !important;
+  }
+}
+/* @media (min-width: 992px) {
+  .data-pickers-group {
+    padding: 4px 1px !important;
+  }
+} */
+
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader-container {
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+.loader {
+  border: 20px solid rgba(185, 186, 183, 0.935);
+  border-top: 10px solid #393b8e;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border-width: 10px !important;
+  animation: spin 1s linear infinite;
+}
+.table > :not(caption) > * > * {
+  /* background-color: transparent !important; */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ///workflow warning message styles */
+
+.workflow-warn-icon {
+  display: flex;
+  align-items: center;
+  color: black;
+  font-size: 13px;
+  gap: 10px;
+  font-weight: 500;
+}
+.Hybrid-warn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.modal-button-bg {
+  background-color: #dfeaf2;
+  padding: 10px 0;
+}
+.modal-buttons {
+  border-radius: unset !important;
+  color: #ffff !important;
+  background-color: #008080 !important;
+  font-size: 13px !important;
+  font-weight: bold !important;
+  width: 60px !important;
+}
